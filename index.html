@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuliner Jawa Timur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🍜 Jatim Food Review</h1>
+    <p>Platform ulasan kuliner Jawa Timur — publik & mudah digunakan!</p>
+  </header>
+
+  <section class="form-section">
+    <h2>Tulis Ulasan</h2>
+
+    <input type="text" id="nama" placeholder="Nama kamu">
+    <input type="text" id="tempat" placeholder="Nama tempat / restoran">
+    <input type="text" id="kota" placeholder="Kota di Jawa Timur">
+    <input type="number" id="rating" min="1" max="5" placeholder="Rating (1–5)">
+    <textarea id="ulasan" placeholder="Tulis ulasan kamu..."></textarea>
+
+    <button onclick="kirimReview()">Kirim Ulasan</button>
+  </section>
+
+  <section class="search-section">
+    <input type="text" id="cari" placeholder="Cari berdasarkan tempat / kota..." oninput="cariReview()">
+  </section>
+
+  <section class="list-section">
+    <h2>Semua Ulasan</h2>
+    <div id="reviewList"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
